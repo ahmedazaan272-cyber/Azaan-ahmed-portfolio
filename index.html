@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Button -->
+            <button class="nav-btn" id="nav-btn"><i class="fas fa-arrow-up"></i> Lets Talk</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge"><span class="dot"></span> Available for freelance work</div>
+                    <h1>Azaan Ahmed</h1>
+                    <p class="subtitle">Frontend Developer & Web Designer</p>
+                    <p class="description">Creating beautiful, responsive, and interactive web experiences</p>
+                    <div class="hero-meta">
+                        <span>3+ Years Experience</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <div class="action-buttons">
+                        <button class="btn btn-hire">Hire Me</button>
+                        <button class="btn btn-contact">Contact Me</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img.jpg" alt="Azaan Ahmed">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1>About Me</h1>
+            <div class="about-container">
+                <div class="about-content">
+                    <p class="about-text">I'm a passionate frontend developer with a keen eye for design. I specialize
+                        in creating beautiful, responsive, and interactive web experiences that users love.</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-list">
+                            <div class="skill-item">HTML & CSS</div>
+                            <div class="skill-item">JavaScript</div>
+                            <div class="skill-item">React</div>
+                            <div class="skill-item">Web Design</div>
+                            <div class="skill-item">Responsive Design</div>
+                            <div class="skill-item">UI/UX</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-image"><i class="fas fa-baseball-ball"></i></div>
+                    <h3>Cricket Portfolio</h3>
+                    <p>A responsive cricket portfolio website built with HTML, CSS, and JavaScript.</p>
+                    <a class="btn btn-project" href="Cricket%20portfolio/index.html" target="_blank" rel="noopener">View Project</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Two</h3>
+                    <p>An interactive web application with modern design</p>
+                    <button class="btn btn-project">View Project</button>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Three</h3>
+                    <p>A full-featured website with animations and effects</p>
+                    <button class="btn btn-project">View Project</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1>Get In Touch</h1>
+            <div class="contact-container">
+                <form class="contact-form" action="https://formsubmit.co/ahmedazaan272@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from your portfolio">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="true">
+                    <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text">&copy; 2026 Azaan Ahmed. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/itx_azaan_10/" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+                <a href="http://facebook.com/azaan.ahmad.186590" target="_blank" class="social-icon" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

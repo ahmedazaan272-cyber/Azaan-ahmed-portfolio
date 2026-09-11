@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">🏏 Cricket Hub</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#matches">Matches</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#Pakistan-players">Pakistan Players</a></li>
+        </ul>
+
+        <button id="themeToggle">🌙</button>
+        <button id="menuToggle">☰</button>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <span>WELCOME TO THE CRICKET WORLD</span>
+    <h1>Feel The <b>Power</b><br>Of Cricket 🏏</h1>
+    <p>Live scores, top players, upcoming matches and latest cricket news.</p>
+    <button onclick="document.getElementById('matches').scrollIntoView({behavior:'smooth'})">
+        Explore Matches →
+    </button>
+</section>
+
+<section class="matches-section" id="matches">
+    <h2>🔥 Upcoming Matches</h2>
+    <input type="text" id="searchInput" placeholder="Search team or match...">
+
+    <div class="live-status">
+        <span class="live-dot"></span>
+        Live updates every 12 seconds
+    </div>
+    <div class="matches" id="matchList"></div>
+    <div class="scoreboard-panel" id="scoreboardPanel"></div>
+</section>
+
+<section class="players-section" id="players">
+    <h2>⭐ Top Players</h2>
+
+    <div class="players">
+        <div class="player-card"
+             data-name="Babar Azam"
+             data-role="Top-order Batsman"
+             data-country="Pakistan 🇵🇰"
+             data-style="Right-hand batsman">
+            <div class="player-icon">👑</div>
+            <h3>Babar Azam</h3>
+            <p>Captain • Batsman</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Shaheen Afridi"
+             data-role="Fast Bowler"
+             data-country="Pakistan 🇵🇰"
+             data-style="Left-arm fast bowler">
+            <div class="player-icon">⚡</div>
+            <h3>Shaheen Afridi</h3>
+            <p>Fast Bowler</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Shadab Khan"
+             data-role="All-rounder"
+             data-country="Pakistan 🇵🇰"
+             data-style="Leg-spin bowler and batsman">
+            <div class="player-icon">🎯</div>
+            <h3>Shadab Khan</h3>
+            <p>All-rounder</p>
+        </div>
+    </div>
+</section>
+
+<section class="players-section" id="pakistan-players">
+    <h2>🇵🇰 Pakistan Players</h2>
+
+    <div class="players">
+        <div class="player-card"
+             data-name="Mohammad Rizwan"
+             data-role="Wicketkeeper Batsman"
+             data-country="Pakistan 🇵🇰"
+             data-style="Right-hand batsman">
+            <div class="player-icon">🧤</div>
+            <h3>Mohammad Rizwan</h3>
+            <p>Wicketkeeper Batsman</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Fakhar Zaman"
+             data-role="Opening Batsman"
+             data-country="Pakistan 🇵🇰"
+             data-style="Left-hand batsman">
+            <div class="player-icon">🏏</div>
+            <h3>Fakhar Zaman</h3>
+            <p>Opening Batsman</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Haris Rauf"
+             data-role="Fast Bowler"
+             data-country="Pakistan 🇵🇰"
+             data-style="Right-arm fast bowler">
+            <div class="player-icon">⚡</div>
+            <h3>Haris Rauf</h3>
+            <p>Fast Bowler</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Imam-ul-Haq"
+             data-role="Opening Batsman"
+             data-country="Pakistan 🇵🇰"
+             data-style="Left-hand batsman">
+            <div class="player-icon">🏆</div>
+            <h3>Imam-ul-Haq</h3>
+            <p>Opening Batsman</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Mohammad Nawaz"
+             data-role="All-rounder"
+             data-country="Pakistan 🇵🇰"
+             data-style="Left-hand batsman and left-arm spinner">
+            <div class="player-icon">🎯</div>
+            <h3>Mohammad Nawaz</h3>
+            <p>All-rounder</p>
+        </div>
+
+        <div class="player-card"
+             data-name="Naseem Shah"
+             data-role="Fast Bowler"
+             data-country="Pakistan 🇵🇰"
+             data-style="Right-arm fast bowler">
+            <div class="player-icon">🔥</div>
+            <h3>Naseem Shah</h3>
+            <p>Fast Bowler</p>
+        </div>
+    </div>
+</section>
+
+<section class="news-section" id="news">
+    <h2>📰 Latest News</h2>
+
+    <div class="news">
+        <article>
+            <h3>Babar returns to form</h3>
+            <p>Babar Azam scores a brilliant century in the latest match.</p>
+        </article>
+
+        <article>
+            <h3>Shaheen ready for big battle</h3>
+            <p>Shaheen Afridi prepares for the upcoming series.</p>
+        </article>
+    </div>
+</section>
+
+<div id="playerModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal">×</button>
+        <div class="modal-player-icon">🏏</div>
+        <h2 id="modalName"></h2>
+        <p id="modalRole"></p>
+        <p><b>Country:</b> <span id="modalCountry"></span></p>
+        <p><b>Style:</b> <span id="modalStyle"></span></p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Cricket Hub • Made for Cricket Lovers 💚</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
