@@ -346,12 +346,12 @@ function Footer() {
             <div className="footer-container">
                 <p className="footer-text">&copy; {year} Azaan Ahmed. All rights reserved.</p>
                 <div className="social-icons">
-                    <a href="https://www.instagram.com/itx_azaan_10/" target="_blank" rel="noopener" className="social-icon" title="Instagram">
+                    <span className="social-icon" role="img" aria-label="Instagram">
                         <i className="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/azaan.ahmad.186590" target="_blank" rel="noopener" className="social-icon" title="Facebook">
+                    </span>
+                    <span className="social-icon" role="img" aria-label="Facebook">
                         <i className="fab fa-facebook"></i>
-                    </a>
+                    </span>
                 </div>
             </div>
         </footer>
