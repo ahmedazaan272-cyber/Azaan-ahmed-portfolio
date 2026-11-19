@@ -121,7 +121,7 @@ function Hero() {
 
                 <div className="hero-visual">
                     <div className="profile-card glass-card">
-                        <img src="Screenshot 2026-09-25 235850.png" alt="Azaan Ahmed" />
+                        <img src="img.png" alt="Azaan Ahmed" />
                     </div>
                 </div>
             </div>

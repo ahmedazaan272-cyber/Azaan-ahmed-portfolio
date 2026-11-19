@@ -398,6 +398,7 @@ main {
     letter-spacing: -0.04em;
 }
 
+
 .about-wrap {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
